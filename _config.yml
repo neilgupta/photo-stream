@@ -26,8 +26,8 @@ author:
   website: https://blog.metamorphium.com
 description: >- # this means to ignore newlines until "baseurl:"
   Neil's photo stream
-baseurl: "/photo-stream" # the subpath of your site, e.g. /blog
-url: "https://blog.metamorphium.com/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://photos.metamorphium.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: neilgupta
 github_username: neilgupta
 
