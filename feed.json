@@ -1,0 +1,14 @@
+---
+---
+
+{"photos": [
+  {% assign images = site.static_files | photo_filter %}
+  {% for image in images limit: 20 %}
+    {
+      "title": "{{ image.name | strip_extension }}",
+      "link": "{{ site.url }}/{{ image.name | strip_extension | slugify }}/",
+      "src": "{{ site.url }}{{ image.name | uri_escape | processed_path: 'large' }}",
+      "thumbnail": "{{ site.url }}{{ image.name | uri_escape | processed_path: 'thumbnail' }}"
+    }
+  {% endfor %}
+]}
